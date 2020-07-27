@@ -16,10 +16,54 @@
             $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
                 $('.offcanvas-collapse').toggleClass('open')
             })
+
+            var divNome = document.querySelector(".navbar-collapse");
+            $(document).on("click", function(e) {
+                var fora = !divNome.contains(e.target);
+                if (fora){
+                    if(isVisible(divNome) === true){
+                        $('.offcanvas-collapse').toggleClass('open')
+                    }
+                    $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
+                        $('.offcanvas-collapse').toggleClass('open')
+                    })
+                }
+            });
+
+            $(divNome).on("click", function(e) {
+                
+            });
+
         });
         window.onload = function () {
             console.log("window is loaded");
         };
+
+        function getStyle(elem, prop){
+            if (elem.currentStyle) { //IE8
+
+                //Converte hifens para camelCase
+                prop = prop.replace(/-([a-z])/gi, function (value) {
+                    return value.toLowerCase();
+                });
+                
+                return elem.currentStyle[prop];
+            } else if (window.getComputedStyle) {//Navegadores modernos
+
+
+                //Converte camelCase para hifens
+                prop = prop.replace(/([A-Z])/g, '-$1').toLowerCase();
+                
+                return window.getComputedStyle(elem, null).getPropertyValue(prop);
+            }
+        }
+        function isVisible(elem){
+            if (getStyle(elem, "visibility") === "hidden") {
+                return false;
+            }else{
+                return true;
+            }
+        }
     </script>
 
     <title>Meu Portifólio</title>
@@ -40,7 +84,7 @@
                 </button>
             </div>
 
-            <div class="navbar-collapse offcanvas-collapse">
+            <div class="navbar-collapse offcanvas-collapse" id="navbar-collapse">
                 <div class="offcanvas-collapse-fundo">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">

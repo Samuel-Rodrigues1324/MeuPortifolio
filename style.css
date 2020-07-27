@@ -90,7 +90,7 @@ body{
 
 /*FIM CSS MENU*/
 
-@media (min-width: 400px) {
+@media (min-width: 769px) {
     .colunas {
       -ms-flex-preferred-size: 0;
       flex-basis: 0;
@@ -99,12 +99,18 @@ body{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 769px) {
     .menu{
-        padding-bottom: 20px !important;
+        padding-bottom: 30px !important;
     }
     .colunas {
         -ms-flex-pack: center !important;
         justify-content: center !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .offcanvas-collapse{
+        width: 50%;
     }
 }
