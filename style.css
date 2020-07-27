@@ -12,6 +12,10 @@
     background-color: #E8E8E8 !important;
 }
 
+img{
+    max-width: 100%;
+}
+
 body{
     width: 100vw;
 }
@@ -25,12 +29,22 @@ body{
     width: 100% !important;
 }
 
-#logo{
-    max-width: 100%;
+.botaoMenu{
+    color: #fff !important;
+    border-color: #fff !important;
+    padding: 7px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    font-size: 30px;
+    border-radius: 20%;
+}
+.botaoMenu:hover{
+    color: #e1e1e1 !important;
+    background-color: #222;
 }
 
-.efic{
-    font-size: 35px;
+.texto1{
+    font-size: 25px;
     font-family: Arial;
     color: #696969;
 }
