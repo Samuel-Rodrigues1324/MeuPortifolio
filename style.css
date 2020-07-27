@@ -43,13 +43,25 @@ body{
     background-color: #222;
 }
 
+.nav-link{
+    padding: 20px !important;
+    font-family: Arial;
+    font-size: 12pt;
+    border-bottom: 2px solid #222;
+    color: #fff !important;
+}
+.nav-link:hover{
+    background-color: #CD6600;
+    color: #e1e1e1 !important;
+}
+
 .texto1{
     font-size: 25px;
     font-family: Arial;
     color: #696969;
 }
 
-/*CSS EXEMPLO MENU*/
+/*CSS MENU*/
 
 .offcanvas-collapse {
     position: fixed;
@@ -59,10 +71,11 @@ body{
     left: -300px;
     width: 300px;
     visibility: hidden;
-    background-color: #EE7600;
+    background-color: #111;
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
+    padding: 2px !important;
 }
 
 .offcanvas-collapse.open {
@@ -70,7 +83,12 @@ body{
     visibility: visible;
 }
 
-/*FIM CSS EXEMPLO MENU*/
+.offcanvas-collapse-fundo{
+    background-color: #EE7600;
+    height: 100%;
+}
+
+/*FIM CSS MENU*/
 
 @media (min-width: 400px) {
     .colunas {
