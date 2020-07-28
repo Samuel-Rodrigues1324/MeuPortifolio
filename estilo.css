@@ -97,7 +97,7 @@ img{
     padding-top: 1% !important;
     padding-bottom: 1% !important;
     max-width: 100% !important;
-    background-color: #B5B5B5;
+    background-color: #828282;
 }
 .carousel-inner{
     max-width: 100% !important;
@@ -113,10 +113,6 @@ img{
     border-width: 1px;
     max-width: 100% !important;
     max-height: 100% !important;
-}
-.carousel-item img:hover{
-    transition: 500ms;
-    opacity: 0.8;
 }
 
 @media (min-width: 769px) {
