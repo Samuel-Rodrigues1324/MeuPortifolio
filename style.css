@@ -122,6 +122,15 @@ img{
     opacity: 0.8;
 }
 
+.carousel-indicators li {
+    background-color: #EE7600;
+    height: 8px;
+    border-radius: 2px;
+}
+.carousel-indicators .active{
+    background-color: #222;
+}
+
 /*CSS FOOTER*/
 
 .footer{
