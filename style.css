@@ -53,6 +53,26 @@ img{
 .nav-link:hover{
     background-color: #CD6600;
     color: #e1e1e1 !important;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0);
+}
+.dropdown-item{
+    width: 80%;
+    background-color: #EE7600;
+    padding: 10px !important;
+    font-family: Arial;
+    font-size: 12pt;
+    border-top: none !important;
+    border: 2px solid #222;
+    color: #fff !important;
+}
+.dropdown-item:hover{
+    background-color: #CD6600;
+    color: #e1e1e1 !important;
+    cursor: pointer;
 }
 
 .texto1{
