@@ -45,6 +45,7 @@ img{
 
 .nav-link{
     padding: 20px !important;
+    height: auto !important;
     font-family: Arial;
     font-size: 12pt;
     border-bottom: 2px solid #222;
@@ -61,8 +62,9 @@ img{
 }
 .dropdown-item{
     width: 80%;
+    height: auto !important;
     background-color: #EE7600;
-    padding: 10px !important;
+    padding: 5px !important;
     font-family: Arial;
     font-size: 12pt;
     border-top: none !important;
@@ -216,6 +218,9 @@ img{
     .offcanvas-collapse{
         width: 50%;
     }
+    .dropdown-item{
+        font-size: 10pt;
+    }
 }
 
 @media (max-width: 570px) {
@@ -241,3 +246,11 @@ img{
     }
 }
 
+@media all and (max-width: 768px) {
+    .dropdown-menu{
+        overflow:auto !important;
+    }
+    .offcanvas-collapse{
+        overflow: auto !important;
+    }
+}

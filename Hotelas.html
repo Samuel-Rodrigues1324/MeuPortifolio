@@ -11,14 +11,26 @@
     <script src="bootstrap.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/996ef823e7.js" crossorigin="anonymous"></script>
-    
+
+    <style>
+        
+        .section img{
+            border-style: solid;
+            border-color: #000;
+            border-width: 1px;
+        }
+        @media (max-width: 1200px) {
+            .imagens .col-xl-6{
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                padding-bottom: 20px !important;
+            }
+        }
+
+    </style>
+
     <script>
         $(document).ready(function () {
-            $('.carousel').carousel({
-                interval: 3000,
-                keyboard: true
-            })
-
             console.log("document is ready");
             $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
                 $('.offcanvas-collapse').toggleClass('open')
@@ -74,7 +86,7 @@
 
     </script>
 
-    <title>Meu Portifólio</title>
+    <title>Projeto Hotelas</title>
 </head>
 <body id="body">
 
@@ -110,13 +122,13 @@
                                   Projetos
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="MachineMakers.html"><p>Monster Machines</p></a>
-                                    <a class="dropdown-item" href="Notebooks.html"><p>Manutenção de notebooks</p></a>
-                                    <a class="dropdown-item" href="ReloadingGames.html"><p>Reloading Games</p></a>
-                                    <a class="dropdown-item" href="AlunoOnline.html"><p>Aluno Online</p></a>
-                                    <a class="dropdown-item" href="Matematica.html"><p>Matemática</p></a>
-                                    <a class="dropdown-item" href="Propriety.html"><p>Propriety</p></a>
-                                    <a class="dropdown-item" href="Hotelas.html"><p>Hotelas</p></a>
+                                  <a class="dropdown-item" href="MachineMakers.html">Monster Machines</a>
+                                  <a class="dropdown-item" href="Notebooks.html">Manutenção de notebooks</a>
+                                  <a class="dropdown-item" href="ReloadingGames.html">Reloading Games</a>
+                                  <a class="dropdown-item" href="AlunoOnline.html">Aluno Online</a>
+                                  <a class="dropdown-item" href="Matematica.html">Matemática</a>
+                                  <a class="dropdown-item" href="Propriety.html">Propriety</a>
+                                  <a class="dropdown-item" href="Hotelas.html"><p>Hotelas</p></a>
                                 </div>
                               </div>
                         </li>
@@ -128,100 +140,91 @@
 
     <br><br><br><br><br><br><br><br>
 
-    <section class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-4">
-                <center>
-                    <span style="font-size: 150px; color: #EE7600;"><i class="fas fa-chart-line"></i></span>
-                    <br>
-                    <span class="texto1">Eficiência, eficácia e prontidão para o serviço</span>
-                </center>
+    <section class="container section">
+        <br>
+        <h2> <span style="color: #EE7600;"><i class="fas fa-long-arrow-alt-right"></i></span> Projeto Hotelas-Reservas Online(3ºano)</h2>
+        <br>
+        <div class="row">
+            <div class="col-xl-6">
+                <img class="img-fluid" src="img/Projetos/Hotelas-3ano/image (1).png">
             </div>
-            <div class="col-xl-1"></div>
-            <div class="col-xl-4">
-                <center>
-                    <span style="font-size: 150px; color: #EE7600;"><i class="fas fa-handshake"></i></span>
-                    <br>
-                    <span class="texto1">Alto compromisso com o trabalho exercido</span>
-                </center>
+            <div class="col-xl-6" style="padding-left: 5% !important; padding-right: 5% !important;">
+                <p style="font-size: 15pt;">
+                    Esse projeto foi uma "Atualização" do projeto Propriety. Ele segue a mesma 
+                    ideia de facilitar todo o processo de procurar uma estadia, porém, diferentemente
+                    do Propriety, o Hotelas, como o próprio nome indica, trata-se da busca por hoteis. 
+                    Como dito anteriormente, esse projeto é uma atualização, então ele é mais completo 
+                    contendo um banco de dados que armazena endereços de hoteis, número de quartos, 
+                    entre outros, além de um sistema de feedback e um chat de conversação entre usuários
+                    e garante uma segurança dos dados do utilitário do site. Estas são as 
+                    páginas feitas por mim.
+                </p>
             </div>
         </div>
-
-        <br><center><hr style="width: 80%; border: solid; border-color: #888; border-width: 1px;"></center><br>
-
-        <div class="previews">
-            <h2> <span style="color: #EE7600;"><i class="fas fa-long-arrow-alt-right"></i></span> Visão prévia de cada projeto</h2>
-            <br>
-
-            <!-- Carrosel -->
-
-            <div id="meuCarousel" class="carousel slide" data-ride="carousel">
-
-                <!-- Indicadores -->
-
-                <ol class="carousel-indicators mb-2">
-                    <li data-target="meuCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="meuCarousel" data-slide-to="1"></li>
-                    <li data-target="meuCarousel" data-slide-to="2"></li>
-                    <li data-target="meuCarousel" data-slide-to="3"></li>
-                    <li data-target="meuCarousel" data-slide-to="4"></li>
-                    <li data-target="meuCarousel" data-slide-to="5"></li>
-                    <li data-target="meuCarousel" data-slide-to="6"></li>
-                </ol>
-                <center>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="MachineMakers.html">
-                                <img class="img-fluid" src="img/Projetos/MonsterMachines/MonsterMachines.jpg">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="Notebooks.html">
-                                <img class="img-fluid" src="img/Projetos/ManutancaoNotebooks/manutencao_thinkpad1.jpeg">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="ReloadingGames.html">
-                                <img class="img-fluid" src="img/Projetos/ReloadingGames-1ano/projeto1.jpg">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="AlunoOnline.html">
-                                <img class="img-fluid" src="img/Projetos/AlunoOnline-2ano/AlunoOnline.jpg">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="Matematica.html">
-                                <img class="img-fluid" src="img/Projetos/Matematica-2ano/conversor.jpg">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="Propriety.html">
-                                <img class="img-fluid" src="img/Projetos/Propriety-2ano/proprietysobre.jpg">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="Hotelas.html">
-                                <img class="img-fluid" src="img/Projetos/Hotelas-3ano/image (1).png">
-                            </a>
-                        </div>
-                    </div>
-                </center>
-
-                <!-- Botões próximo e anterior -->
-
-                <a href="#meuCarousel" role="button" data-slide="prev" class="carousel-control-prev">
-                    <span style="font-size: 50px; color: #EE7600;"><i class="fas fa-angle-left"></i></span>
-                </a>
-                <a href="#meuCarousel" role="button" data-slide="next" class="carousel-control-next">
-                    <span style="font-size: 50px; color: #EE7600;"><i class="fas fa-angle-right"></i></span>
-                </a>
-
+        <br><br>
+        <h2>Página de Ofertas</h2>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-xl-6 d-flex align-items-center">
+                <p style="font-size: 15pt;">
+                    Aqui nesta página foi colocada uma aba de pesquisa para filtrar 
+                    melhor o que o cliente deseja, além dos hoteis em destaque.
+                </p>
             </div>
-
+            <div class="col-xl-6">
+                <img src="img/Projetos/Hotelas-3ano/image (1).png" class="img-fluid">
+            </div>
         </div>
-
-    <br>
+        <br>
+        <div class="row imagens">
+            <div class="col-xl-6 pr-2">
+                <img src="img/Projetos/Hotelas-3ano/image (2).png" class="img-fluid">
+            </div>
+            <div class="col-xl-6 pl-2">
+                <img src="img/Projetos/Hotelas-3ano/image (3).png" class="img-fluid">
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Formulário de reservas</h2>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-xl-6 d-flex align-items-center">
+                <p style="font-size: 15pt;">
+                    Após escolher o hotel e o quarto, o usuário é enviado para está 
+                    página, onde o mesmo deverá inserir seus dados para que o quarto 
+                    seja reservado no banco de dados.
+                </p>
+            </div>
+            <div class="col-xl-6">
+                <img src="img/Projetos/Hotelas-3ano/image (7).png" class="img-fluid">
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Página de feedback e chat online</h2>
+        <br>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-xl-6 d-flex align-items-center">
+                <p style="font-size: 15pt;">
+                    Esta página foi dedicada a receber conselhos, críticas e dicas construtivas 
+                    para o site, além de possuir um chat para os usuários conversarem entre si
+                    como uma espécie de fórum.
+                </p>
+            </div>
+            <div class="col-xl-6">
+                <img src="img/Projetos/Hotelas-3ano/image (15).png" class="img-fluid">
+            </div>
+        </div>
+        <br><br>
     </section>
     <br>
     <footer class="footer d-flex justify-content-center align-items-center">
